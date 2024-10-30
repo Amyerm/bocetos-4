@@ -21,7 +21,22 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate, UINaviga
         let seleccionar_imagen = UIImagePickerController()
         seleccionar_imagen.delegate = self
         
-        seleccionar_imagen.sourceType = UIImagePickerController.SourceType
+        seleccionar_imagen.sourceType = UIImagePickerController.SourceType.photoLibrary
+        
+        seleccionar_imagen.allowsEditing = false
+        
+        self.present(seleccionar_imagen, animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let imagen_seleccionada = info[UIImagePickerController.InfoKey.originalImage] as? UIImage{
+            aqui_va_la_foto.image = imagen_seleccionada
+        }
+        else{
+            
+        }
+        self.dismiss(animated: true)
     }
 }
 

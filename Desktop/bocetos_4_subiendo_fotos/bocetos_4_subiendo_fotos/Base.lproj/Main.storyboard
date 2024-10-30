@@ -24,7 +24,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" image="square.and.arrow.down" catalog="system"/>
                                 <connections>
-                                    <action selector="subir_foto_para_mostrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dM1-0D-gqV"/>
+                                    <action selector="subir_foto_para_mostrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Nk-Bb-TwU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,7 +41,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="aqui_va_la_foto" destination="UJC-cW-kfu" id="gGq-hG-NLB"/>
+                        <outlet property="aqui_va_la_foto" destination="UJC-cW-kfu" id="csm-Ni-1gf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
